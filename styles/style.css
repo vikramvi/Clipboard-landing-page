@@ -1,0 +1,111 @@
+/* Write GOOD comments so that next developer ... */
+/* ( who happens to be a killer psycopath & knows where you stay ). */
+/* He's going to maintain this code; need NOT have to get back to you */
+
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+/* --------------------------- generic styling --------------------------- */
+/* ----------- ----------- ----------- ----------- ----------- ----------- */
+
+:root {
+  /* color related */
+
+  /* font related */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  /* 62.5% of 16px browser font size is 10px */
+  font-size: 62.5%;
+  line-height: 1.15;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+/* ----------- ----------- ----------- ----------- ----------- ------------ */
+/* --------------------------- specific styling --------------------------- */
+/* ----------- ----------- ----------- ----------- ----------- ------------ */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header-grid"
+    "snippets-grid"
+    "access-clipboard-info-grid"
+    "supercharge-workflow-grid"
+    "companies-grid"
+    "os-info-grid"
+    "footer-grid";
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* grid area names */
+.header-grid {
+  grid-area: header-grid;
+  /* debug purpose only */
+  border: 1px solid red;
+}
+
+.snippets-grid {
+  grid-area: snippets-grid;
+  /* debug purpose only */
+  border: 1px solid red;
+}
+
+.access-clipboard-info-grid {
+  grid-area: access-clipboard-info-grid;
+  /* debug purpose only */
+  border: 1px solid red;
+}
+
+.supercharge-workflow-grid {
+  grid-area: supercharge-workflow-grid;
+  /* debug purpose only */
+  border: 1px solid red;
+}
+
+.companies-grid {
+  grid-area: companies-grid;
+  /* debug purpose only */
+  border: 1px solid red;
+}
+
+.os-info-grid {
+  grid-area: os-info-grid;
+  /* debug purpose only */
+  border: 1px solid red;
+}
+
+.footer-grid {
+  grid-area: footer-grid;
+  /* debug purpose only */
+  border: 1px solid red;
+}
+
+/* default footer styling */
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  } */
