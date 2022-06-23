@@ -42,6 +42,8 @@ img {
 /* --------------------------- specific styling --------------------------- */
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
 
+/* mobile first approach */
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -56,6 +58,40 @@ img {
   gap: 2rem;
   justify-content: center;
 }
+
+/* style 1st component */
+.header-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.hearder-grid__img {
+  height: 9rem;
+  width: 9rem;
+  margin: 6rem auto 1rem auto;
+}
+
+.header-grid__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 8rem;
+}
+
+.header-grid__info {
+  text-align: center;
+  margin: 0 5rem;
+}
+
+.header-grid > button {
+  padding: 1.3rem 8rem;
+  border-radius: 5rem;
+  border: none;
+}
+
+/* style 2nd component */
 
 /* grid area names */
 .header-grid {
