@@ -92,6 +92,42 @@ img {
 }
 
 /* style 2nd component */
+.snippets-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.snippets-grid__title {
+  font-size: 3rem;
+  margin: 0 4rem;
+  text-align: center;
+}
+
+.snippets-grid__info {
+  text-align: center;
+  margin: 0 4rem;
+  font-size: 1.7rem;
+}
+
+.snippets-grid__img {
+  padding: 0 4rem;
+}
+
+.snippets-grid > h3 {
+  font-size: 2rem;
+}
+
+.snippets-grid__child1-info,
+.snippets-grid__child2-info,
+.snippets-grid__child3-info {
+  text-align: center;
+  margin: 0 6rem;
+}
+
+/* style 3rd component */
 
 /* grid area names */
 .header-grid {
