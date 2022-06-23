@@ -151,6 +151,37 @@ img {
   padding: 4rem;
 }
 
+/* style 4th component */
+.supercharge-workflow-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.supercharge-workflow-grid > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.supercharge-workflow-grid > section > p {
+  text-align: center;
+}
+
+.supercharge-workflow-grid-header__title {
+  font-size: 2.5rem;
+  margin: 0 5rem;
+  text-align: center;
+}
+
+.supercharge-workflow-grid > section > h3 {
+  font-size: 2rem;
+}
+
 /* grid area names */
 .header-grid {
   grid-area: header-grid;
