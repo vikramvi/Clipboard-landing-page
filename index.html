@@ -11,149 +11,157 @@
   <title>Frontend Mentor | Clipboard landing page</title>
 </head>
 
-<body>
+<body class="grid-container">
 
   <!-- Component 1 -->
-  <header>
-    <img src="./images/logo.svg" alt="company logo">
-    <h1>
+  <header class="header-grid">
+    <img class="hearder-grid__img" src="./images/logo.svg" alt="company logo">
+    <h1 class="header-grid__title">
       A history of everything you copy
     </h1>
-    <p>
+    <p class="header-grid__info">
       Clipboard allows you to track and organize everything you
       copy. Instantly access your clipboard on all your devices.
     </p>
-    <button>
+    <button class="header-grid__ios-button">
       Download for iOS
     </button>
-    <button>
+    <button class="header-grid__mac-button">
       Download for Mac
     </button>
   </header>
 
   <!-- Component 2 -->
-  <article>
-    <h2>
+  <article class="snippets-grid">
+    <h2 class="snippets-grid__title">
       Keep track of your snippets
     </h2>
-    <p>
+    <p class="snippets-grid__info">
       Clipboard instantly stores any item you copy in the cloud,
       meaning you can access your snippets immediately on all your
       devices. Our Mac and iOS apps will help you organize everything.
     </p>
-    <img src="./images/image-computer.png" alt="desktop">
-    <h3>
+    <img class="snippets-grid__img" src="./images/image-computer.png" alt="desktop">
+    <h3 class="snippets-grid__child1-title">
       Quick Search
     </h3>
-    <p>
+    <p class="snippets-grid__child1-info">
       Easily search your snippets by content, category, web address, application, and more.
     </p>
-    <h3>
+    <h3 class="snippets-grid__child2-title">
       iCloud Sync
     </h3>
-    <p>
+    <p class="snippets-grid__child2-info">
       Instantly saves and syncs snippets across all your devices.
     </p>
-    <h3>
+    <h3 class="snippets-grid__child3-title">
       Complete History
     </h3>
-    <p>
+    <p class="snippets-grid__child3-info">
       Retrieve any snippets from the first moment you started using the app.
     </p>
   </article>
 
   <!-- Component 3 -->
-  <article>
-    <h2>
+  <article class="access-clipboard-info-grid">
+    <h2 class="access-clipboard-info-grid__title">
       Access Clipboard anywhere
     </h2>
-    <p>
+    <p class="access-clipboard-info-grid__info">
       Whether you’re on the go, or at your computer, you can access all your Clipboard
       snippets in a few simple clicks.
     </p>
-    <img src="./images/image-devices.png" alt="multiple devices">
+    <img class="access-clipboard-info-grid__img" src="./images/image-devices.png" alt="multiple devices">
   </article>
 
   <!-- Component 4 -->
-  <article>
-    <h2>
-      Supercharge your workflow
-    </h2>
-    <p>
-      We’ve got the tools to boost your productivity.
-    </p>
-    <img src="./images/icon-blacklist.svg" alt="blacklists icon">
-    <h3>
-      Create blacklists
-    </h3>
-    <p>
-      Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-    </p>
-    <img src="./images/icon-text.svg" alt="text icon">
-    <h3>
-      Plain text snippets
-    </h3>
-    <p>
-      Remove unwanted formatting from copied text for a consistent look.
-    </p>
-    <img src="./images/icon-preview.svg" alt="preview icon">
-    <h3>
-      Sneak preview
-    </h3>
-    <p>
-      Quick preview of all snippets on your Clipboard for easy access.
-    </p>
+  <article class="supercharge-workflow-grid">
+    <section class="supercharge-workflow-grid-header">
+      <h2 class="supercharge-workflow-grid-header__title">
+        Supercharge your workflow
+      </h2>
+      <p class="supercharge-workflow-grid-header__info">
+        We’ve got the tools to boost your productivity.
+      </p>
+    </section>
+    <section class="supercharge-workflow-grid-child-1">
+      <img class="supercharge-workflow-grid-child-1__img" src="./images/icon-blacklist.svg" alt="blacklists icon">
+      <h3 class="supercharge-workflow-grid-child-1__title">
+        Create blacklists
+      </h3>
+      <p class="supercharge-workflow-grid-child-1__info">
+        Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
+      </p>
+    </section>
+    <section class="supercharge-workflow-grid-child-2">
+      <img class="supercharge-workflow-grid-child-2__img" src="./images/icon-text.svg" alt="text icon">
+      <h3 class="supercharge-workflow-grid-child-2__title">
+        Plain text snippets
+      </h3>
+      <p class="supercharge-workflow-grid-child-2__info">
+        Remove unwanted formatting from copied text for a consistent look.
+      </p>
+    </section>
+    <section class="supercharge-workflow-grid-child-3">
+      <img class="supercharge-workflow-grid-child-3__img" src="./images/icon-preview.svg" alt="preview icon">
+      <h3 class="supercharge-workflow-grid-child-3__title">
+        Sneak preview
+      </h3>
+      <p class="supercharge-workflow-grid-child-3__info">
+        Quick preview of all snippets on your Clipboard for easy access.
+      </p>
+    </section>
   </article>
 
   <!-- Component 5 -->
-  <article>
-    <img src="./images/logo-google.png" alt="Google Company Logo">
-    <img src="./images/logo-ibm.png" alt="IBM Company Logo">
-    <img src="./images/logo-microsoft.png" alt="Microsoft Company Logo">
-    <img src="./images/logo-hp.png" alt="Hewlett Packard Company Logo">
-    <img src="./images/logo-vector-graphics.png" alt="Vector Graphics Company Logo">
+  <article class="companies-grid">
+    <img class="companies-grid__img-1" src="./images/logo-google.png" alt="Google Company Logo">
+    <img class="companies-grid__img-2" src="./images/logo-ibm.png" alt="IBM Company Logo">
+    <img class="companies-grid__img-3" src="./images/logo-microsoft.png" alt="Microsoft Company Logo">
+    <img class="companies-grid__img-4" src="./images/logo-hp.png" alt="Hewlett Packard Company Logo">
+    <img class="companies-grid__img-5" src="./images/logo-vector-graphics.png" alt="Vector Graphics Company Logo">
   </article>
 
   <!-- Component 6 -->
-  <article>
-    <h2>
+  <article class="os-info-grid">
+    <h2 class="os-info-grid__title">
       Clipboard for iOS and Mac OS
     </h2>
-    <p>
+    <p class="os-info-grid__info">
       Available for free on the App Store. Download for Mac or iOS, sync with iCloud
       and you’re ready to start adding to your clipboard.
     </p>
-    <button>
+    <button class="os-info-grid__ios-button">
       Download for iOS
     </button>
-    <button>
+    <button class="os-info-grid__mac-button">
       Download for Mac
     </button>
   </article>
 
   <!-- Component 7 -->
-  <footer>
-    <img src="./images/logo.svg" alt="company logo">
-    <p>
+  <footer class="footer-grid">
+    <img class="footer-grid__img" src="./images/logo.svg" alt="company logo">
+    <p class="footer-grid__faq">
       FAQs
     </p>
-    <p>
+    <p class="footer-grid__contact-us">
       Contact Us
     </p>
-    <p>
+    <p class="footer-grid__privacy-policy">
       Privacy Policy
     </p>
-    <p>
+    <p class="footer-grid__press-kit">
       Press Kit
     </p>
-    <p>
+    <p class="footer-grid__install-guide">
       Install Guide
     </p>
-    <div>
-      <img src="./images/icon-facebook.svg" alt="facebook icon">
-      <img src="./images/icon-twitter.svg" alt="twitter icon">
-      <img src="./images/icon-instagram.svg" alt="instagram icon">
-    </div>
+    <section class="footer-grid-img-section">
+      <img class="footer-grid-img-section__fb-img" src="./images/icon-facebook.svg" alt="facebook icon">
+      <img class="footer-grid-img-section__twitter-img" src="./images/icon-twitter.svg" alt="twitter icon">
+      <img class="footer-grid-img-section__instagram-img" src="./images/icon-instagram.svg" alt="instagram icon">
+    </section>
   </footer>
 
   <!-- <footer>
