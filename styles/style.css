@@ -128,6 +128,28 @@ img {
 }
 
 /* style 3rd component */
+.access-clipboard-info-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.access-clipboard-info-grid__title {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 3rem;
+}
+
+.access-clipboard-info-grid__info {
+  text-align: center;
+  margin: 0 5rem;
+}
+
+.access-clipboard-info-grid__img {
+  padding: 4rem;
+}
 
 /* grid area names */
 .header-grid {
