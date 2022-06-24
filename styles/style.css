@@ -170,6 +170,7 @@ img {
 
 .supercharge-workflow-grid > section > p {
   text-align: center;
+  margin: 0 5rem;
 }
 
 .supercharge-workflow-grid-header__title {
@@ -197,6 +198,34 @@ img {
   /* https://stackoverflow.com/questions/12552290/how-to-resize-multiple-images-proportionally */
   width: 40%;
 }
+
+/* style 6th component */
+.os-info-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.os-info-grid__title {
+  font-size: 2.5rem;
+  margin: 0 5rem;
+  text-align: center;
+}
+
+.os-info-grid__info {
+  text-align: center;
+  margin: 0 5rem;
+}
+
+.os-info-grid > button {
+  padding: 1.3rem 8rem;
+  border-radius: 5rem;
+  border: none;
+}
+
+/* style 7th component */
 
 /* grid area names */
 .header-grid {
