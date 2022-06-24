@@ -57,7 +57,7 @@ img {
     "footer-grid";
   gap: 2rem;
   justify-content: center;
-  max-width: 50rem;
+  max-width: 70rem;
   margin: 2.5rem auto;
 }
 
@@ -287,13 +287,50 @@ img {
   /* component 2 */
   .snippets-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1.3fr 0.7fr;
     grid-template-areas:
       "snippets-grid__title snippets-grid__title"
       "snippets-grid__info snippets-grid__info"
       "snippets-grid__img snippets-grid__features-section";
+    gap: 1rem;
   }
 
+  .snippets-grid__title {
+    font-size: 2rem;
+  }
+
+  .snippets-grid__info {
+    font-size: 1.4rem;
+    padding: 0 7rem;
+    margin-bottom: 3rem;
+  }
+
+  .snippets-grid__img {
+    justify-self: start;
+    padding: 0;
+    /* google css cut part of image */
+    /* https://www.educative.io/answers/how-to-crop-an-image-in-css */
+    object-position: -20px;
+  }
+
+  .snippets-grid__features-section {
+    margin-left: 2rem;
+  }
+
+  .snippets-grid > section > h3 {
+    text-align: start;
+    font-size: 1.7rem;
+  }
+
+  .snippets-grid__child1-info,
+  .snippets-grid__child2-info,
+  .snippets-grid__child3-info {
+    margin: 1rem 0 3.5rem 0;
+    text-align: start;
+    font-size: 1.2rem;
+  }
+
+  /* component 3 */
   .supercharge-workflow-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
