@@ -182,6 +182,22 @@ img {
   font-size: 2rem;
 }
 
+/* style 5th component */
+.companies-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.companies-grid > img {
+  padding: 2rem;
+  /* Google "css reduce multiple image sizes" */
+  /* https://stackoverflow.com/questions/12552290/how-to-resize-multiple-images-proportionally */
+  width: 40%;
+}
+
 /* grid area names */
 .header-grid {
   grid-area: header-grid;
