@@ -57,6 +57,8 @@ img {
     "footer-grid";
   gap: 2rem;
   justify-content: center;
+  max-width: 50rem;
+  margin: 2.5rem auto;
 }
 
 /* style 1st component */
@@ -116,15 +118,16 @@ img {
   padding: 0 4rem;
 }
 
-.snippets-grid > h3 {
+.snippets-grid > section > h3 {
   font-size: 2rem;
+  text-align: center;
 }
 
 .snippets-grid__child1-info,
 .snippets-grid__child2-info,
 .snippets-grid__child3-info {
   text-align: center;
-  margin: 0 6rem;
+  margin: 2rem 6rem 3rem 6rem;
 }
 
 /* style 3rd component */
@@ -245,47 +248,208 @@ img {
   margin: 0 2rem;
 }
 
+/* desktop second approach */
+
+@media screen and (min-width: 45rem) {
+  .header-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "hearder-grid__img hearder-grid__img"
+      "header-grid__title header-grid__title"
+      "header-grid__info header-grid__info"
+      "header-grid__ios-button header-grid__mac-button";
+  }
+
+  .snippets-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "snippets-grid__title snippets-grid__title"
+      "snippets-grid__info snippets-grid__info"
+      "snippets-grid__img snippets-grid__features-section";
+  }
+
+  .supercharge-workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "supercharge-workflow-grid-header supercharge-workflow-grid-header supercharge-workflow-grid-header"
+      "supercharge-workflow-grid-child-1 supercharge-workflow-grid-child-2 supercharge-workflow-grid-child-3";
+  }
+
+  .companies-grid {
+    flex-direction: row;
+  }
+
+  .os-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "os-info-grid__title os-info-grid__title"
+      "os-info-grid__info os-info-grid__info"
+      "os-info-grid__ios-button os-info-grid__mac-button";
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "footer-grid__img footer-grid__faq  footer-grid__privacy-policy footer-grid__install-guide footer-grid-img-section"
+      "footer-grid__img footer-grid__contact-us footer-grid__press-kit . footer-grid-img-section";
+  }
+
+  /* remove extra margin to bring all social icons on same row */
+  .footer-grid-img-section > img {
+    margin: 0 0.2rem;
+  }
+}
+
 /* grid area names */
+
+/* Component 1 grid areas */
 .header-grid {
   grid-area: header-grid;
   /* debug purpose only */
   border: 1px solid red;
 }
 
+.hearder-grid__img {
+  grid-area: hearder-grid__img;
+}
+
+.header-grid__title {
+  grid-area: header-grid__title;
+}
+
+.header-grid__info {
+  grid-area: header-grid__info;
+}
+
+.header-grid__ios-button {
+  grid-area: header-grid__ios-button;
+}
+
+.header-grid__mac-button {
+  grid-area: header-grid__mac-button;
+}
+
+/* Component 2 grid areas */
 .snippets-grid {
   grid-area: snippets-grid;
   /* debug purpose only */
   border: 1px solid red;
 }
 
+.snippets-grid__title {
+  grid-area: snippets-grid__title;
+}
+
+.snippets-grid__info {
+  grid-area: snippets-grid__info;
+}
+
+.snippets-grid__img {
+  grid-area: snippets-grid__img;
+}
+
+.snippets-grid__features-section {
+  grid-area: snippets-grid__features-section;
+}
+
+/* Component 3 grid areas */
 .access-clipboard-info-grid {
   grid-area: access-clipboard-info-grid;
   /* debug purpose only */
   border: 1px solid red;
 }
 
+/* Component 4 grid areas */
 .supercharge-workflow-grid {
   grid-area: supercharge-workflow-grid;
   /* debug purpose only */
   border: 1px solid red;
 }
 
+.supercharge-workflow-grid-header {
+  grid-area: supercharge-workflow-grid-header;
+}
+
+.supercharge-workflow-grid-child-1 {
+  grid-area: supercharge-workflow-grid-child-1;
+}
+
+.supercharge-workflow-grid-child-2 {
+  grid-area: supercharge-workflow-grid-child-2;
+}
+
+.supercharge-workflow-grid-child-3 {
+  grid-area: supercharge-workflow-grid-child-3;
+}
+
+/* Component 5 grid areas */
 .companies-grid {
   grid-area: companies-grid;
   /* debug purpose only */
   border: 1px solid red;
 }
 
+/* Component 6 grid areas */
 .os-info-grid {
   grid-area: os-info-grid;
   /* debug purpose only */
   border: 1px solid red;
 }
 
+.os-info-grid__title {
+  grid-area: os-info-grid__title;
+}
+
+.os-info-grid__info {
+  grid-area: os-info-grid__info;
+}
+
+.os-info-grid__ios-button {
+  grid-area: os-info-grid__ios-button;
+}
+
+.os-info-grid__mac-button {
+  grid-area: os-info-grid__mac-button;
+}
+
+/* Component 7 grid areas */
 .footer-grid {
   grid-area: footer-grid;
   /* debug purpose only */
   border: 1px solid red;
+}
+
+.footer-grid__img {
+  grid-area: footer-grid__img;
+}
+
+.footer-grid__faq {
+  grid-area: footer-grid__faq;
+}
+
+.footer-grid__contact-us {
+  grid-area: footer-grid__contact-us;
+}
+
+.footer-grid__privacy-policy {
+  grid-area: footer-grid__privacy-policy;
+}
+
+.footer-grid__press-kit {
+  grid-area: footer-grid__press-kit;
+}
+
+.footer-grid__install-guide {
+  grid-area: footer-grid__install-guide;
+}
+
+.footer-grid-img-section {
+  grid-area: footer-grid-img-section;
 }
 
 /* default footer styling */
