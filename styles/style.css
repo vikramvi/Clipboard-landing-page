@@ -251,6 +251,7 @@ img {
 /* desktop second approach */
 
 @media screen and (min-width: 45rem) {
+  /* component 1 */
   .header-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -259,8 +260,31 @@ img {
       "header-grid__title header-grid__title"
       "header-grid__info header-grid__info"
       "header-grid__ios-button header-grid__mac-button";
+    gap: 2rem;
   }
 
+  .header-grid > button {
+    padding: 1rem 0;
+    width: 16rem;
+  }
+
+  .header-grid__title {
+    font-size: 3.5rem;
+  }
+
+  .header-grid__info {
+    margin: 0 7.5rem;
+  }
+
+  .header-grid__ios-button {
+    justify-self: end;
+  }
+
+  .header-grid__mac-button {
+    justify-self: start;
+  }
+
+  /* component 2 */
   .snippets-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
