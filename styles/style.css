@@ -226,6 +226,24 @@ img {
 }
 
 /* style 7th component */
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-grid__img {
+  /* reduce image size */
+  width: 15%;
+}
+
+.footer-grid-img-section > img {
+  /* by default they are display block with 100% width */
+  display: inline;
+  margin: 0 2rem;
+}
 
 /* grid area names */
 .header-grid {
