@@ -391,6 +391,28 @@ img {
       "os-info-grid__ios-button os-info-grid__mac-button";
   }
 
+  .os-info-grid__title {
+    font-size: 2.25rem;
+  }
+
+  .os-info-grid__info {
+    font-size: 1.35rem;
+    padding: 0 14rem;
+  }
+
+  .os-info-grid > button {
+    padding: 1rem 0;
+    width: 16rem;
+  }
+
+  .os-info-grid__ios-button {
+    justify-self: end;
+  }
+
+  .os-info-grid__mac-button {
+    justify-self: start;
+  }
+
   /* component 7 */
   .footer-grid {
     display: grid;
