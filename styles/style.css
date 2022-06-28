@@ -416,15 +416,31 @@ img {
   /* component 7 */
   .footer-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-areas:
-      "footer-grid__img footer-grid__faq  footer-grid__privacy-policy footer-grid__install-guide footer-grid-img-section"
-      "footer-grid__img footer-grid__contact-us footer-grid__press-kit . footer-grid-img-section";
+      ". footer-grid__img footer-grid__faq  footer-grid__privacy-policy footer-grid__install-guide . footer-grid-img-section ."
+      ". footer-grid__img footer-grid__contact-us footer-grid__press-kit . . footer-grid-img-section .";
+    padding: 2.4rem 0;
+  }
+
+  .footer-grid__img {
+    width: 35%;
+  }
+
+  .footer-grid > p {
+    font-size: 1.4rem;
+  }
+
+  .footer-grid-img-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   /* remove extra margin to bring all social icons on same row */
   .footer-grid-img-section > img {
     margin: 0 0.2rem;
+    width: 20%;
   }
 }
 
