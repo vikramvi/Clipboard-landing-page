@@ -343,7 +343,7 @@ img {
   }
 
   .header-grid__info {
-    padding: 0 10rem;
+    padding: 0 18rem;
   }
 
   .header-grid__ios-button {
@@ -380,7 +380,7 @@ img {
     padding: 0;
     /* google css cut part of image */
     /* https://www.educative.io/answers/how-to-crop-an-image-in-css */
-    object-position: -20px;
+    object-position: -25px;
   }
 
   .snippets-grid__features-section {
@@ -398,6 +398,7 @@ img {
     margin: 1rem 0 3.5rem 0;
     text-align: start;
     font-size: 1.2rem;
+    padding: 0 1rem 0 0;
   }
 
   /* component 3 - desktop */
@@ -406,8 +407,8 @@ img {
   }
 
   .access-clipboard-info-grid__info {
-    font-size: 1.35rem;
-    padding: 0 5.5rem;
+    font-size: 1.3rem;
+    padding: 0 16rem;
   }
 
   .access-clipboard-info-grid__img {
@@ -443,8 +444,9 @@ img {
   }
 
   .supercharge-workflow-grid > section > p {
-    font-size: 1.35rem;
+    font-size: 1.25rem;
     margin: 0;
+    padding: 0;
   }
 
   .supercharge-workflow-grid-child-1__info {
@@ -477,7 +479,7 @@ img {
 
   .os-info-grid__info {
     font-size: 1.3rem;
-    padding: 0 14rem;
+    padding: 0 18rem;
   }
 
   .os-info-grid > button {
