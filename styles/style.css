@@ -16,6 +16,7 @@
   --clr-dark-grayish-blue: hsl(210, 10%, 33%);
   --clr-grayish-blue: hsl(201, 11%, 66%);
   --clr-white: white;
+  --clr-light-gray: rgb(232, 232, 232);
 
   /* font related */
   --ff-primary: "Bai Jamjuree", sans-serif;
@@ -73,7 +74,7 @@ img {
   margin: 2.5rem auto;
 }
 
-/* style 1st component */
+/* style 1st component - mobile */
 .header-grid {
   display: flex;
   flex-direction: column;
@@ -95,19 +96,23 @@ img {
 
 .header-grid__title {
   font-size: 2.5rem;
+  font-weight: var(--fw-600);
   text-align: center;
   margin: 0 8rem;
 }
 
 .header-grid__info {
   text-align: center;
-  margin: 0 5rem;
+  padding: 0 8rem;
+  font-size: 1.4rem;
+  color: var(--clr-grayish-blue);
 }
 
 .header-grid > button {
   padding: 1.3rem 8rem;
   border-radius: 5rem;
   border: none;
+  font-size: 1.25rem;
 }
 
 .header-grid__ios-button {
@@ -120,7 +125,7 @@ img {
   color: var(--clr-white);
 }
 
-/* style 2nd component */
+/* style 2nd component - mobile */
 .snippets-grid {
   display: flex;
   flex-direction: column;
@@ -130,15 +135,17 @@ img {
 }
 
 .snippets-grid__title {
-  font-size: 3rem;
-  margin: 0 4rem;
+  font-size: 2.5rem;
+  font-weight: var(--fw-600);
+  padding: 0 10rem;
   text-align: center;
 }
 
 .snippets-grid__info {
   text-align: center;
-  margin: 0 4rem;
-  font-size: 1.7rem;
+  padding: 0 8.5rem;
+  font-size: 1.35rem;
+  color: var(--clr-grayish-blue);
 }
 
 .snippets-grid__img {
@@ -147,17 +154,26 @@ img {
 
 .snippets-grid > section > h3 {
   font-size: 2rem;
+  font-weight: var(--fw-600);
   text-align: center;
 }
 
 .snippets-grid__child1-info,
 .snippets-grid__child2-info,
 .snippets-grid__child3-info {
+  font-size: 1.35rem;
   text-align: center;
-  margin: 2rem 6rem 3rem 6rem;
+  margin: 2rem 0 3rem 0;
+  padding: 0 8rem;
+  color: var(--clr-grayish-blue);
 }
 
-/* style 3rd component */
+/* unique arrangement as per design need */
+.snippets-grid__child2-info {
+  padding: 0 9rem;
+}
+
+/* style 3rd component - mobile */
 .access-clipboard-info-grid {
   display: flex;
   flex-direction: column;
@@ -168,20 +184,23 @@ img {
 
 .access-clipboard-info-grid__title {
   font-size: 3rem;
+  font-weight: var(--fw-600);
   text-align: center;
   margin: 0 3rem;
 }
 
 .access-clipboard-info-grid__info {
+  font-size: 1.35rem;
   text-align: center;
-  margin: 0 5rem;
+  padding: 0 8rem;
+  color: var(--clr-grayish-blue);
 }
 
 .access-clipboard-info-grid__img {
   padding: 4rem;
 }
 
-/* style 4th component */
+/* style 4th component - mobile */
 .supercharge-workflow-grid {
   display: flex;
   flex-direction: column;
@@ -199,21 +218,25 @@ img {
 }
 
 .supercharge-workflow-grid > section > p {
+  font-size: 1.4rem;
   text-align: center;
-  margin: 0 5rem;
+  padding: 0 8rem;
+  color: var(--clr-grayish-blue);
 }
 
 .supercharge-workflow-grid-header__title {
   font-size: 2.5rem;
+  font-weight: var(--fw-600);
   margin: 0 5rem;
   text-align: center;
 }
 
 .supercharge-workflow-grid > section > h3 {
   font-size: 2rem;
+  font-weight: var(--fw-600);
 }
 
-/* style 5th component */
+/* style 5th component - mobile */
 .companies-grid {
   display: flex;
   flex-direction: column;
@@ -229,7 +252,7 @@ img {
   width: 40%;
 }
 
-/* style 6th component */
+/* style 6th component - mobile */
 .os-info-grid {
   display: flex;
   flex-direction: column;
@@ -240,19 +263,23 @@ img {
 
 .os-info-grid__title {
   font-size: 2.5rem;
+  font-weight: var(--fw-600);
   margin: 0 5rem;
   text-align: center;
 }
 
 .os-info-grid__info {
   text-align: center;
-  margin: 0 5rem;
+  font-size: 1.4rem;
+  padding: 0 8rem;
+  color: var(--clr-grayish-blue);
 }
 
 .os-info-grid > button {
   padding: 1.3rem 8rem;
   border-radius: 5rem;
   border: none;
+  font-size: 1.25rem;
 }
 
 .os-info-grid__ios-button {
@@ -265,14 +292,14 @@ img {
   color: var(--clr-white);
 }
 
-/* style 7th component */
+/* style 7th component - mobile */
 .footer-grid {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  background-color: rgb(232, 232, 232);
+  background-color: var(--clr-light-gray);
 }
 
 .footer-grid__img {
@@ -293,7 +320,7 @@ img {
     gap: 8rem;
   }
 
-  /* component 1 */
+  /* component 1 - desktop */
   .header-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -316,7 +343,7 @@ img {
   }
 
   .header-grid__info {
-    margin: 0 7.5rem;
+    padding: 0 10rem;
   }
 
   .header-grid__ios-button {
@@ -327,7 +354,7 @@ img {
     justify-self: start;
   }
 
-  /* component 2 */
+  /* component 2 - desktop */
   .snippets-grid {
     display: grid;
     grid-template-columns: 1.3fr 0.7fr;
@@ -339,12 +366,12 @@ img {
   }
 
   .snippets-grid__title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .snippets-grid__info {
     font-size: 1.4rem;
-    padding: 0 7rem;
+    padding: 0 15rem;
     margin-bottom: 3rem;
   }
 
@@ -373,7 +400,7 @@ img {
     font-size: 1.2rem;
   }
 
-  /* component 3 */
+  /* component 3 - desktop */
   .access-clipboard-info-grid__title {
     font-size: 2.25rem;
   }
@@ -391,7 +418,7 @@ img {
     height: auto;
   }
 
-  /* component 4 */
+  /* component 4 - desktop */
   .supercharge-workflow-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -424,7 +451,7 @@ img {
     padding: 0 1.5rem;
   }
 
-  /* component 5 */
+  /* component 5 - desktop */
   .companies-grid {
     flex-direction: row;
     justify-content: space-between;
@@ -434,7 +461,7 @@ img {
     width: 15%;
   }
 
-  /* component 6 */
+  /* component 6 - desktop */
   .os-info-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -449,7 +476,7 @@ img {
   }
 
   .os-info-grid__info {
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     padding: 0 14rem;
   }
 
@@ -466,7 +493,7 @@ img {
     justify-self: start;
   }
 
-  /* component 7 */
+  /* component 7 - desktop */
   .footer-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
