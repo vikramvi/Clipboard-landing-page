@@ -360,6 +360,8 @@ img {
       "supercharge-workflow-grid-header supercharge-workflow-grid-header supercharge-workflow-grid-header"
       "supercharge-workflow-grid-child-1 supercharge-workflow-grid-child-2 supercharge-workflow-grid-child-3";
     gap: 1.5rem;
+    /* as couldn't remove white space around top png image, need to pull this component upwards */
+    margin-top: -2rem;
   }
 
   .supercharge-workflow-grid-header__title {
