@@ -6,10 +6,21 @@
 /* --------------------------- generic styling --------------------------- */
 /* ----------- ----------- ----------- ----------- ----------- ----------- */
 
+/* Use Required Google Font with Weights */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
 :root {
   /* color related */
+  --clr-strong-cyan: hsl(171, 66%, 44%);
+  --clr-light-blue: hsl(233, 100%, 69%);
+  --clr-dark-grayish-blue: hsl(210, 10%, 33%);
+  --clr-grayish-blue: hsl(201, 11%, 66%);
+  --clr-white: white;
 
   /* font related */
+  --ff-primary: "Bai Jamjuree", sans-serif;
+  --fw-400: 400;
+  --fw-600: 600;
 }
 
 *,
@@ -31,6 +42,7 @@ html {
 }
 
 body {
+  font-family: var(--ff-primary);
   font-size: 1.6rem;
 }
 
@@ -96,6 +108,16 @@ img {
   padding: 1.3rem 8rem;
   border-radius: 5rem;
   border: none;
+}
+
+.header-grid__ios-button {
+  background-color: var(--clr-strong-cyan);
+  color: var(--clr-white);
+}
+
+.header-grid__mac-button {
+  background-color: var(--clr-light-blue);
+  color: var(--clr-white);
 }
 
 /* style 2nd component */
@@ -233,6 +255,16 @@ img {
   border: none;
 }
 
+.os-info-grid__ios-button {
+  background-color: var(--clr-strong-cyan);
+  color: var(--clr-white);
+}
+
+.os-info-grid__mac-button {
+  background-color: var(--clr-light-blue);
+  color: var(--clr-white);
+}
+
 /* style 7th component */
 .footer-grid {
   display: flex;
@@ -240,6 +272,7 @@ img {
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  background-color: rgb(232, 232, 232);
 }
 
 .footer-grid__img {
