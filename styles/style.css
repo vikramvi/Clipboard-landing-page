@@ -57,7 +57,7 @@ img {
     "footer-grid";
   gap: 2rem;
   justify-content: center;
-  max-width: 70rem;
+  max-width: 85rem;
   margin: 2.5rem auto;
 }
 
@@ -331,18 +331,52 @@ img {
   }
 
   /* component 3 */
+  .access-clipboard-info-grid__title {
+    font-size: 2.25rem;
+  }
+
+  .access-clipboard-info-grid__info {
+    font-size: 1.35rem;
+    padding: 0 5.5rem;
+  }
+
+  /* component 4 */
   .supercharge-workflow-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
       "supercharge-workflow-grid-header supercharge-workflow-grid-header supercharge-workflow-grid-header"
       "supercharge-workflow-grid-child-1 supercharge-workflow-grid-child-2 supercharge-workflow-grid-child-3";
+    gap: 1.5rem;
   }
 
+  .supercharge-workflow-grid-header__title {
+    font-size: 2.25rem;
+  }
+
+  .supercharge-workflow-grid-header__info {
+    font-size: 1.35rem;
+  }
+
+  .supercharge-workflow-grid > section > h3 {
+    font-size: 1.75rem;
+  }
+
+  .supercharge-workflow-grid > section > p {
+    font-size: 1.35rem;
+    margin: 0;
+  }
+
+  .supercharge-workflow-grid-child-1__info {
+    padding: 0 1.5rem;
+  }
+
+  /* component 5 */
   .companies-grid {
     flex-direction: row;
   }
 
+  /* component 6 */
   .os-info-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -352,6 +386,7 @@ img {
       "os-info-grid__ios-button os-info-grid__mac-button";
   }
 
+  /* component 7 */
   .footer-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
