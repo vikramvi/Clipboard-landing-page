@@ -374,6 +374,11 @@ img {
   /* component 5 */
   .companies-grid {
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .companies-grid > img {
+    width: 15%;
   }
 
   /* component 6 */
