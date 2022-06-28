@@ -68,6 +68,11 @@ img {
   gap: 3rem;
   justify-content: center;
   align-items: center;
+  /* background image properties */
+  background-image: url("../images/bg-header-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hearder-grid__img {
@@ -265,6 +270,7 @@ img {
       "header-grid__info header-grid__info"
       "header-grid__ios-button header-grid__mac-button";
     gap: 2rem;
+    background-image: url("../images/bg-header-desktop.png");
   }
 
   .header-grid > button {
