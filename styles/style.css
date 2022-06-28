@@ -449,8 +449,6 @@ img {
 /* Component 1 grid areas */
 .header-grid {
   grid-area: header-grid;
-  /* debug purpose only */
-  border: 1px solid red;
 }
 
 .hearder-grid__img {
@@ -476,8 +474,6 @@ img {
 /* Component 2 grid areas */
 .snippets-grid {
   grid-area: snippets-grid;
-  /* debug purpose only */
-  border: 1px solid red;
 }
 
 .snippets-grid__title {
@@ -499,15 +495,11 @@ img {
 /* Component 3 grid areas */
 .access-clipboard-info-grid {
   grid-area: access-clipboard-info-grid;
-  /* debug purpose only */
-  border: 1px solid red;
 }
 
 /* Component 4 grid areas */
 .supercharge-workflow-grid {
   grid-area: supercharge-workflow-grid;
-  /* debug purpose only */
-  border: 1px solid red;
 }
 
 .supercharge-workflow-grid-header {
@@ -529,15 +521,11 @@ img {
 /* Component 5 grid areas */
 .companies-grid {
   grid-area: companies-grid;
-  /* debug purpose only */
-  border: 1px solid red;
 }
 
 /* Component 6 grid areas */
 .os-info-grid {
   grid-area: os-info-grid;
-  /* debug purpose only */
-  border: 1px solid red;
 }
 
 .os-info-grid__title {
@@ -559,8 +547,6 @@ img {
 /* Component 7 grid areas */
 .footer-grid {
   grid-area: footer-grid;
-  /* debug purpose only */
-  border: 1px solid red;
 }
 
 .footer-grid__img {
@@ -589,6 +575,13 @@ img {
 
 .footer-grid-img-section {
   grid-area: footer-grid-img-section;
+}
+
+/* debug purpose only */
+header,
+footer,
+article {
+  border: 1px solid red;
 }
 
 /* default footer styling */
