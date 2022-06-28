@@ -42,7 +42,7 @@ img {
 /* --------------------------- specific styling --------------------------- */
 /* ----------- ----------- ----------- ----------- ----------- ------------ */
 
-/* mobile first approach */
+/* ----------- ----------- ----------- mobile first approach ----------- ----------- ----------- */
 
 .grid-container {
   display: grid;
@@ -248,9 +248,13 @@ img {
   margin: 0 2rem;
 }
 
-/* desktop second approach */
+/* ----------- ----------- ----------- desktop second approach ----------- ----------- ----------- */
 
 @media screen and (min-width: 45rem) {
+  .grid-container {
+    gap: 8rem;
+  }
+
   /* component 1 */
   .header-grid {
     display: grid;
@@ -338,6 +342,14 @@ img {
   .access-clipboard-info-grid__info {
     font-size: 1.35rem;
     padding: 0 5.5rem;
+  }
+
+  .access-clipboard-info-grid__img {
+    /* debug purpose only */
+    /* border: 2px dotted green; */
+    padding: 0;
+    width: 700px;
+    height: auto;
   }
 
   /* component 4 */
@@ -444,7 +456,7 @@ img {
   }
 }
 
-/* grid area names */
+/* ----------- ----------- ----------- grid area names ----------- ----------- ----------- */
 
 /* Component 1 grid areas */
 .header-grid {
@@ -581,7 +593,7 @@ img {
 header,
 footer,
 article {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* default footer styling */
