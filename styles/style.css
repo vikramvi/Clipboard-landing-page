@@ -22,6 +22,11 @@
   --ff-primary: "Bai Jamjuree", sans-serif;
   --fw-400: 400;
   --fw-600: 600;
+
+  /* box shadow values */
+  --offset-x: 0.3rem;
+  --offset-y: 0.3rem;
+  --blur-radius: 1rem;
 }
 
 *,
@@ -129,11 +134,15 @@ p {
 .header-grid__ios-button {
   background-color: var(--clr-strong-cyan);
   color: var(--clr-white);
+  box-shadow: var(--offset-x) var(--offset-y) var(--blur-radius)
+    var(--clr-strong-cyan);
 }
 
 .header-grid__mac-button {
   background-color: var(--clr-light-blue);
   color: var(--clr-white);
+  box-shadow: var(--offset-x) var(--offset-y) var(--blur-radius)
+    var(--clr-light-blue);
 }
 
 /* style 2nd component - mobile */
@@ -306,11 +315,15 @@ p {
 .os-info-grid__ios-button {
   background-color: var(--clr-strong-cyan);
   color: var(--clr-white);
+  box-shadow: var(--offset-x) var(--offset-y) var(--blur-radius)
+    var(--clr-strong-cyan);
 }
 
 .os-info-grid__mac-button {
   background-color: var(--clr-light-blue);
   color: var(--clr-white);
+  box-shadow: var(--offset-x) var(--offset-y) var(--blur-radius)
+    var(--clr-light-blue);
 }
 
 /* style 7th component - mobile */
