@@ -129,6 +129,7 @@ p {
   border-radius: 5rem;
   border: none;
   font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .header-grid__ios-button {
@@ -238,7 +239,7 @@ p {
 .supercharge-workflow-grid > section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 3rem;
 }
@@ -310,6 +311,7 @@ p {
   border-radius: 5rem;
   border: none;
   font-size: 1.25rem;
+  cursor: pointer;
 }
 
 .os-info-grid__ios-button {
@@ -484,6 +486,12 @@ p {
     font-size: 1.35rem;
   }
 
+  .supercharge-workflow-grid-child-1,
+  .supercharge-workflow-grid-child-2,
+  .supercharge-workflow-grid-child-3 {
+    height: 185px;
+  }
+
   .supercharge-workflow-grid > section > h3 {
     font-size: 1.75rem;
   }
@@ -492,6 +500,7 @@ p {
     font-size: 1.25rem;
     margin: 0;
     padding: 0;
+    height: 65px;
   }
 
   .supercharge-workflow-grid-child-1__info {
