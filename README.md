@@ -40,3 +40,45 @@ Users should be able to:
 ### Links
 
 - [Live Site URL](https://vikramvi.github.io/Clipboard-landing-page/)
+
+## My process
+
+### Built with
+
+- Semantic & Accessible HTML5 markup
+- CSS BEM
+- CSS Grid
+- CSS Flexbox
+- Mobile-first workflow
+
+### What I learned
+
+- Usage of width + max-width instead of large margin or padding values
+- Resizing images
+- Spacing between items
+- Positioning of items in both mobile and desktop views
+- Breaking big problems into smaller chunks and building on top of it
+- FF and Chrome dev tool usage in various conditions
+
+### Continued development
+
+- Need to practice more about width, height, positioning of items within Grid & Flexbox layouts
+- How to avoid overflow issues
+
+### Useful resources
+
+- Frontend Mentor slack community + website
+- YT videos
+- Google ofcourse
+- Stackoverflow
+- Twitter dev community
+
+## Author
+
+- Frontend Mentor - [@vikramvi](https://www.frontendmentor.io/profile/vikramvi)
+
+## Acknowledgments
+
+- FM community
+- YT content creators
+- Google + SO community
