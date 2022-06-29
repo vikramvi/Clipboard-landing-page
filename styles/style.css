@@ -73,10 +73,10 @@ p {
     "companies-grid"
     "os-info-grid"
     "footer-grid";
-  gap: 2rem;
+  gap: 10rem;
   justify-content: center;
   max-width: 85rem;
-  margin: 2.5rem auto;
+  margin: 0 auto;
 }
 
 /* style 1st component - mobile */
@@ -103,12 +103,18 @@ p {
   font-size: 2.5rem;
   font-weight: var(--fw-600);
   text-align: center;
-  margin: 0 8rem;
+  width: 100%;
+  max-width: 27rem;
+  /* large padding / margin values causes overflow bug */
+  /* margin: 0 8rem; */
 }
 
 .header-grid__info {
   text-align: center;
-  padding: 0 8rem;
+  width: 100%;
+  max-width: 27rem;
+  /* large padding / margin values causes overflow bug */
+  /* padding: 0 8rem; */
   font-size: 1.4rem;
   color: var(--clr-grayish-blue);
 }
@@ -142,13 +148,15 @@ p {
 .snippets-grid__title {
   font-size: 2.5rem;
   font-weight: var(--fw-600);
-  padding: 0 10rem;
+  width: 100%;
+  max-width: 23rem;
   text-align: center;
 }
 
 .snippets-grid__info {
   text-align: center;
-  padding: 0 8.5rem;
+  width: 100%;
+  max-width: 26rem;
   font-size: 1.35rem;
   color: var(--clr-grayish-blue);
 }
@@ -169,13 +177,14 @@ p {
   font-size: 1.35rem;
   text-align: center;
   margin: 2rem 0 3rem 0;
-  padding: 0 8rem;
+  width: 100%;
+  max-width: 27rem;
   color: var(--clr-grayish-blue);
 }
 
 /* unique arrangement as per design need */
 .snippets-grid__child2-info {
-  padding: 0 9rem;
+  padding: 0 2rem;
 }
 
 /* style 3rd component - mobile */
@@ -191,13 +200,15 @@ p {
   font-size: 3rem;
   font-weight: var(--fw-600);
   text-align: center;
-  margin: 0 3rem;
+  width: 100%;
+  max-width: 37rem;
 }
 
 .access-clipboard-info-grid__info {
   font-size: 1.35rem;
   text-align: center;
-  padding: 0 8rem;
+  width: 100%;
+  max-width: 27rem;
   color: var(--clr-grayish-blue);
 }
 
@@ -212,6 +223,7 @@ p {
   justify-content: center;
   align-items: center;
   gap: 6rem;
+  margin-top: -6rem;
 }
 
 .supercharge-workflow-grid > section {
@@ -225,14 +237,16 @@ p {
 .supercharge-workflow-grid > section > p {
   font-size: 1.4rem;
   text-align: center;
-  padding: 0 8rem;
+  width: 100%;
+  max-width: 27rem;
   color: var(--clr-grayish-blue);
 }
 
 .supercharge-workflow-grid-header__title {
   font-size: 2.5rem;
   font-weight: var(--fw-600);
-  margin: 0 5rem;
+  width: 100%;
+  max-width: 31rem;
   text-align: center;
 }
 
@@ -269,14 +283,16 @@ p {
 .os-info-grid__title {
   font-size: 2.5rem;
   font-weight: var(--fw-600);
-  margin: 0 5rem;
+  width: 100%;
+  max-width: 30rem;
   text-align: center;
 }
 
 .os-info-grid__info {
   text-align: center;
   font-size: 1.4rem;
-  padding: 0 8rem;
+  width: 100%;
+  max-width: 26.8rem;
   color: var(--clr-grayish-blue);
 }
 
@@ -305,6 +321,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: var(--clr-light-gray);
+  padding: 6rem;
 }
 
 .footer-grid__img {
