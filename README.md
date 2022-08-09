@@ -59,6 +59,9 @@ Users should be able to:
 - Positioning of items in both mobile and desktop views
 - Breaking big problems into smaller chunks and building on top of it
 - FF and Chrome dev tool usage in various conditions
+- Google "semantic html best practices"
+- Google "html semantic elements rules"
+- Google "can I use html body element as grid container"
 
 ### Continued development
 
